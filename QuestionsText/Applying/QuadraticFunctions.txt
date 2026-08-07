@@ -1,0 +1,11 @@
+
+1. A city is planning to build a new park with a fountain at the center. The fountain is designed to spray water in the shape of a parabola. The maximum height of the water spray is 10 feet, and this occurs when the water is 5 feet away from the center of the fountain. The water reaches the ground 10 feet away from the center of the fountain on either side. Assuming the relation between the distance from the center of the fountain (x) and the height of the water spray (y) follows a quadratic function, what is the vertex of the parabola representing this function?
+
+A. (0, 10)
+ B. (5, 10)
+ C. (10, 5)
+ D. (10, 10)
+
+Correct Answer: B. (5, 10)
+
+Explanation: The vertex of a parabola represented by a quadratic function is the point at which the function reaches its maximum (or minimum) value. In this case, the water reaches its maximum height of 10 feet when it is 5 feet away from the center of the fountain. Therefore, the vertex of the parabola is at (5, 10).

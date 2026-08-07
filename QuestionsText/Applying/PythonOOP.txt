@@ -1,0 +1,20 @@
+    You are developing a Python application where you need to model a real-world entity, a 'Car', with
+attributes like 'color', 'brand', 'speed_limit' and methods like 'accelerate', 'brake'. You want to
+ensure that the internal data of the 'Car' object can't be changed directly to prevent any accidental
+modification. Which Python OOP concept would you use to model this 'Car' entity in your application,
+ensuring data safety?
+
+a. Class
+b. Object
+c. Encapsulation
+d. Polymorphism
+Correct Answer: c
+
+Explanation: The Python OOP concept 'Encapsulation' would be used to model the 'Car' entity in the
+application. Encapsulation describes the idea of wrapping data (attributes) and the methods that work on
+data within one unit - the 'Class'. This puts restrictions on accessing variables and methods directly
+and can prevent the accidental modification of data. A 'Class' (option a) is the blueprint for the
+object and 'Objects' (option b) are instances of the class. Although they are part of the solution, they
+alone can't ensure the safety of data. 'Polymorphism' (option d) is a concept that allows methods to
+behave differently based on the object that invokes them, but it doesn't provide the mechanism to
+protect data.
