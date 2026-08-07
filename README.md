@@ -27,19 +27,3 @@ The project includes the following files:
 The local Chroma vector store is generated automatically from the examples in
 ```QuestionsText/``` when the application starts.
 
-## Notes
-* The application reads ```OPENAI_API_KEY``` from a local ```.env``` file. Never commit that file.
-* Most previously missing UI secondary functions are now implemented (see update section).
-
-## Update
-The following previously incomplete UI and workflow issues have now been implemented and fixed:
-
-* Connected both "Generate Q&A based on the textbook section" buttons to the generation pipeline.
-* Fixed the Refine Q&A input wiring by passing `liked` correctly into `refine_qa(...)`.
-* Aligned backend return values with Gradio output bindings to avoid runtime output mismatch errors.
-* Implemented the "Export Q&As" action so users can export the saved question bank file.
-* Added a status message field in the UI to show clear feedback for save, clear, and export actions.
-* Connected `qa_purpose` to prompt construction so this UI field now affects generation behavior.
-* Added a safe logging utility to prevent Windows GBK console crashes (`UnicodeEncodeError`) when prompts/responses include special characters.
-* Added friendly API failure handling for generation/refinement: when quota is exceeded (HTTP 429), the web UI now shows a clear status message instead of crashing with a long traceback.
-* Fully integrated `Evaluating` and `Creating` with dedicated prompt strategies, parser schemas, UI options, and export fields.
