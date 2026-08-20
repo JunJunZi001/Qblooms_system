@@ -89,8 +89,10 @@ Python 3.11 is recommended.
    python app.py
    ```
 
-The local Chroma vector store is created automatically from the examples in
-`QuestionsText/` when the application starts.
+When `app.py` starts, it creates the local `ChromaStore/` automatically from
+the examples in `QuestionsText/`. Running `edugenie.py` by itself does not
+create the vector store. If initialisation fails, the web application remains
+available without local few-shot retrieval.
 
 ## FDS Case Study
 

@@ -41,9 +41,17 @@ These checks verify machine-readable structure and selected surface
 constraints. They do not establish factual correctness, pedagogical quality,
 or genuine Bloom-level alignment.
 
-Run from the project root with an `OPENAI_API_KEY` in `.env`:
+## Running the generator
+
+The generator uses the root-level `requirements.txt` and additionally requires
+`pypandoc` plus a working Pandoc installation for DOCX conversion. It expects
+`FDS-lecture-notes-2026-01-19.pdf` in the project root and an
+`OPENAI_API_KEY` in `.env`.
+
+Run from the project root:
 
 ```bash
+pip install -r requirements.txt pypandoc
 .venv/bin/python tools/batch_generate_fds_mcqs.py
 ```
 
@@ -72,17 +80,14 @@ There is no separate content-audit or repair workflow in this directory.
 Factual correctness, pedagogical suitability, and substantive Bloom alignment
 must be assessed separately by a qualified reviewer.
 
-## Generated and private files
+## Generated outputs
 
-The following files are generated intermediates and should not be committed:
+The workflow creates:
 
 ```text
-.fds_*.json
-__pycache__/
-*.pyc
-activity.log
+.fds_mcq_question_bank_checkpoint.json
+basic_concept_questions.docx
+higher_concept_quesitons.docx
 ```
 
-Question-bank DOCX files, source PDFs, API keys, and other private study
-materials should also remain outside the public repository unless their
-release has been explicitly approved.
+These outputs are not required to run the Qblooms web application.
