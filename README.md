@@ -44,7 +44,7 @@ edugenie.py             Bloom-specific prompts and Pydantic schemas
 QuestionsText/          Curated few-shot examples
 accessibility.html      Accessibility statement served by the application
 docs/diagrams/          Architecture and user-flow diagrams
-tools/requirements.txt  Python dependencies
+requirements.txt        Python dependencies
 tools/.env.example      Environment-variable template
 tools/README.md         Optional FDS case-study utility documentation
 tools/batch_generate_fds_mcqs.py  Optional FDS MCQ generation script
@@ -68,7 +68,7 @@ Python 3.11 is recommended.
 2. Install the dependencies:
 
    ```bash
-   pip install -r tools/requirements.txt
+   pip install -r requirements.txt
    ```
 
 3. Create the local environment file:
