@@ -45,6 +45,7 @@ QuestionsText/          Curated few-shot examples
 accessibility.html      Accessibility statement served by the application
 docs/diagrams/          Architecture and user-flow diagrams
 requirements.txt        Python dependencies
+launch.txt              Optional virtual-environment launcher
 tools/.env.example      Environment-variable template
 tools/README.md         Optional FDS case-study utility documentation
 tools/batch_generate_fds_mcqs.py  Optional FDS MCQ generation script
@@ -86,8 +87,18 @@ Python 3.11 is recommended.
 5. Start the application:
 
    ```bash
+   source .venv/bin/activate
    python app.py
    ```
+
+   Alternatively, from the project root:
+
+   ```bash
+   bash launch.txt
+   ```
+
+The local `.venv/` directory is not distributed with the repository. Recreate
+it from `requirements.txt` when setting up a new machine.
 
 When `app.py` starts, it creates the local `ChromaStore/` automatically from
 the examples in `QuestionsText/`. Running `edugenie.py` by itself does not

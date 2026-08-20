@@ -51,8 +51,10 @@ The generator uses the root-level `requirements.txt` and additionally requires
 Run from the project root:
 
 ```bash
+python3 -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt pypandoc
-.venv/bin/python tools/batch_generate_fds_mcqs.py
+python tools/batch_generate_fds_mcqs.py
 ```
 
 Useful options include `--model`, `--workers`, `--max-attempts`, `--pdf`,
