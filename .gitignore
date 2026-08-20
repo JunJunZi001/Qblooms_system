@@ -7,9 +7,11 @@ __pycache__/
 .DS_Store
 *.log
 .fds_question_bank_*.json
+.fds_mcq_*.json
 launch.txt
 servercheck.txt
-accessibility.html
+secret(notforUpload)/
+Others(notforUpload)/
 
 # Generated local data and exports
 ChromaStore/

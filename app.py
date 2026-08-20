@@ -96,7 +96,7 @@ MODEL_CANDIDATES = [
     "gpt-4.1-mini",
     "gpt-4.1-nano",
 ]
-ACTIVITY_LOG_PATH = PROJECT_ROOT / "activity.log"
+ACTIVITY_LOG_PATH = PROJECT_ROOT / "tools" / "activity.log"
 LOG_SALT = os.getenv("EDUGENIE_LOG_SALT") or OPENAI_API_KEY or "edugenie-activity-log"
 CUSTOM_CSS = """
 footer,
