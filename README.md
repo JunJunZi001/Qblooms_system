@@ -105,18 +105,6 @@ separate content-audit or repair workflow.
 The source lecture notes and generated study materials are not included in the
 public repository unless their release has been separately authorised.
 
-## Privacy and Repository Hygiene
-
-- Never commit `.env`, API keys, SSH credentials, server details, or other
-  secrets.
-- Do not commit `.venv/`, `__pycache__/`, local logs, checkpoints, Chroma
-  persistence files, or generated Excel/DOCX outputs.
-- Only place examples in `QuestionsText/` when they are safe and authorised for
-  public release.
-- Uploaded source material is sent to the configured model provider during
-  generation; users are responsible for ensuring that they have permission to
-  process it.
-
 ## Limitations
 
 Structural parsing and validation do not guarantee factual correctness,
